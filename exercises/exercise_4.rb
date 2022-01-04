@@ -22,7 +22,7 @@ end
 
 @womens_stores = Store.where(womens_apparel: true)
 for store in @womens_stores do 
-  if store.annual_revenue > 1000000
+  if store.annual_revenue < 1000000
   puts "Store: #{store.name}, Annual Revenue: #{store.annual_revenue}"
   end
 end 
