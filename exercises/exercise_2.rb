@@ -11,7 +11,6 @@ puts "----------"
 # Your code goes here ...
 @store1 = Store.find_by(id: 1)
 @store2 = Store.find_by(id: 2)
-@store3 = Store.find_by(id: 3)
 
 @store1.update(name: 'Toronto')
 @store1.save
