@@ -9,4 +9,12 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
-# Your code goes here ...
+user_store_name = gets.chomp
+
+user_store = Store.create(name: user_store_name)
+user_store.save
+
+puts user_store.name
+puts user_store.errors.messages
+# Error messages shown: 
+# {:name=>["is too short (minimum is 3 characters)"], :annual_revenue=>["is too short (minimum is 0 characters)"]}
